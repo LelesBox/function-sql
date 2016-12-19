@@ -86,7 +86,7 @@ describe('SQL tests', () => {
     assert.deepEqual(query().select().from(numbers).groupBy(parity).execute(), [["odd",[1,3,5,7,9]],["even",[2,4,6,8]]]);
 
     //SELECT * FROM numbers GROUP BY parity, isPrime
-    // assert.deepEqual(query().select().from(numbers).groupBy(parity, prime).execute(), [["odd",[["divisible",[1,9]],["prime",[3,5,7]]]],["even",[["prime",[2]],["divisible",[4,6,8]]]]]);
+    assert.deepEqual(query().select().from(numbers).groupBy(parity, prime).execute(), [["odd",[["divisible",[1,9]],["prime",[3,5,7]]]],["even",[["prime",[2]],["divisible",[4,6,8]]]]]);
 
     function odd(group) {
       return group[0] === 'odd';
