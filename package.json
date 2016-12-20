@@ -1,0 +1,25 @@
+{
+  "name": "function-sql",
+  "version": "1.0.0",
+  "description": "",
+  "main": "function-sql.js",
+  "dependencies": {
+    "chai": "^3.5.0"
+  },
+  "devDependencies": {
+    "mocha": "^3.2.0"
+  },
+  "scripts": {
+    "test": "mocha function-sql.test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LelesBox/function-sql.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LelesBox/function-sql/issues"
+  },
+  "homepage": "https://github.com/LelesBox/function-sql#readme"
+}
