@@ -14,7 +14,6 @@ var query = function () {
   _query.prototype.groupBy = groupBy
   _query.prototype.having = having
   _query.prototype.execute = execute
-  _query
   return new _query()
 }
 
